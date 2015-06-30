@@ -1,0 +1,16 @@
+alias vd='vimdiff'  #vim diff两个文件
+alias tf='tail -f'  #动态查看文件变化
+alias reload='source ~/.bashrc'
+alias bashrc='vim ~/.bashrc && source ~/.bashrc'
+alias ports='netstat -tulanp'
+alias gu='iconv -f gbk -t utf-8'  #两种类型编码转换
+alias ug='iconv -f utf-8 -t gbk'
+alias du1="du --max-depth=1 -h"
+alias psg='ps aux|grep'   #查看
+alias rmsvn='find . -name ".svn" -exec rm -rf {} \; >> /dev/null 2>&1'  #递归删除目录下所有.svn
+alias path="echo `users`@`hostname`:`pwd`"
+alias ..="cd .."
+alias ...="cd ../.."
+alias ....="cd ../../.."
+alias .....="cd ../../../.."
+alias ......="cd ../../../../.."
