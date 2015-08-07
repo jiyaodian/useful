@@ -8,9 +8,15 @@ alias ug='iconv -f utf-8 -t gbk'
 alias du1="du --max-depth=1 -h"
 alias psg='ps aux|grep'   #查看
 alias rmsvn='find . -name ".svn" -exec rm -rf {} \; >> /dev/null 2>&1'  #递归删除目录下所有.svn
-alias path="echo `users`@`hostname`:`pwd`"
+alias spath="echo `whoami`@`hostname`:`pwd`"
 alias ..="cd .."
 alias ...="cd ../.."
 alias ....="cd ../../.."
 alias .....="cd ../../../.."
 alias ......="cd ../../../../.."
+
+function cd {
+    builtin cd "$@" && ls
+}
+
+
