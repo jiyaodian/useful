@@ -1,5 +1,13 @@
 #!/bin/bash
 
+DIYHOME="$HOME/.useful/"
+OSNAME=`uname`
+DIR=$DIYHOME/$OSNAME
+
+if [ -f $DIR/alias ]; then
+    . $DIR/alias
+fi
+
 #------------------------------------------------------------------------------
 # Color definitions
 #------------------------------------------------------------------------------
@@ -18,11 +26,6 @@ export PURPLE='\e[1;35m'
 export cyan='\e[0;36m'
 export CYAN='\e[1;36m'
 export NC='\e[0m'          # 无颜色
-
-# cd and ls
-function cd {
-    builtin cd "$@" && ls
-}
 
 # 修改命令行提示符样式
 PS1="[\[${CYAN}\]\u\[${NC}\]@\[${GREEN}\]\H\[${NC}\] \[${YELLOW}\]\W\[${NC}\]]\$ "
