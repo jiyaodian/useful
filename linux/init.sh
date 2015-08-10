@@ -1,11 +1,7 @@
 #!/bin/bash
 
-DIYHOME="$HOME/.useful/"
-OSNAME=`uname`
-DIR=$DIYHOME/$OSNAME
-
-if [ -f $DIR/alias ]; then
-    . $DIR/alias
+if [ -f alias ]; then
+    . alias
 fi
 
 #------------------------------------------------------------------------------
