@@ -1,10 +1,7 @@
 #!/bin/bash
 
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
-
-if [ -f $DIR/alias ]; then
-    . $DIR/alias
-fi
+[[ -s "$DIR/alias" ]] && source "$DIR/alias"
 
 #------------------------------------------------------------------------------
 # Color definitions
