@@ -1,3 +1,4 @@
+#!/bin/bash
 
 alias vd='vimdiff'  #vim diff两个文件
 alias tf='tail -f'  #动态查看文件变化
@@ -13,6 +14,8 @@ alias spath='echo `whoami`@`hostname`:`pwd`'
 alias fpath='echo ftp://`hostname`:`pwd`'
 alias ta='tmux attach'
 alias sr='screen -r'
+alias ll='ls -l --color=auto'
+alias la='ls -a --color=auto'
 alias ..="cd .."
 alias ...="cd ../.."
 alias ....="cd ../../.."
