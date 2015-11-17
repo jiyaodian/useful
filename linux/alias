@@ -16,6 +16,7 @@ alias ta='tmux attach'
 alias sr='screen -r'
 alias ll='ls -l --color=auto'
 alias la='ls -a --color=auto'
+alias lt='ls -lrt --color=auto'
 alias ..="cd .."
 alias ...="cd ../.."
 alias ....="cd ../../.."
